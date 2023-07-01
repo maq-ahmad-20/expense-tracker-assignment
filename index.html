@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>ExpenseTracker</title>
+</head>
+<body>
+    <div class="outer-box" style="margin-top: 20px;">
+        <form action="" id="form" style="margin-bottom: 30px;">
+            <label for="number">ExpenseAmount:</label>
+            <input type="number" id="number" name="number" class="form-control" style="display: inline-block; width: 20%;" required>
+            <label for="desc">Description:</label>
+            <input type="text" name="desc" id="desc" class="form-control" style="display: inline-block; width: 20%;" required>
+            <label for="items">Choose a item:</label>
+            <select name="items" id="items" form="items" class="form-control" style="display: inline-block; width: 20%;" required>
+            <option value="Movies">Movies</option>
+            <option value="Fuel">Fuel</option>
+            <option value="Food">Food</option>
+            <option value="Electricity">Electricity</option>
+            </select>
+          <button style="border: 1px solid green; border-radius: 6px; width: 200px;">Add Expense</button>
+      
+        </form>
+        <div id="user-details" style="display: inline; margin-top: 40px;">
+
+        </div>
+    </div>
+     <script src="action.js"></script>
+</body>
+</html>
